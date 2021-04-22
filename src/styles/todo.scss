@@ -1,0 +1,96 @@
+.todo {
+  box-shadow: 0 0 5px black;
+  border-radius: 3px;
+  overflow: hidden;
+
+  &__head {
+    background-color: #86a8e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    input {
+      background-color: transparent;
+      border: 0px;
+      color: white;
+      width: 100%;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &:enabled {
+        outline: none;
+      }
+    }
+  }
+
+  &__body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.todo-body {
+  &__sorting {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 10px 0;
+    margin: 0 -5px;
+    button {
+      display: flex;
+      flex-grow: 1;
+      margin: 0 5px;
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    input {
+      margin-right: 5px;
+    }
+  }
+
+  &__list {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+    .empty {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      cursor: pointer;
+    }
+    button {
+      margin-left: 10px;
+    }
+    [data-type="check"] {
+      margin-left: auto;
+    }
+    &.checked {
+      label {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 -5px;
+    button {
+      margin: 0 5px;
+    }
+  }
+}

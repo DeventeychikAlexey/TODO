@@ -1,0 +1,25 @@
+{
+  "name": "modernTodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeventeychikAlexey/todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts":{
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "bugs": {
+    "url": "https://github.com/DeventeychikAlexey/todo/issues"
+  },
+  "homepage": "https://github.com/DeventeychikAlexey/todo#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.30.0"
+  }
+}
